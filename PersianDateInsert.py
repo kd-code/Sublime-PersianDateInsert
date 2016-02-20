@@ -158,4 +158,4 @@ class Persian:
 class PersianDateInsertCommand(sublime_plugin.TextCommand):
 	def run(self, edit):
 		for sel in self.view.sel():
-			self.view.insert(edit, sel.begin(), Gregorian(time.strftime("%Y,%m,%d")).persian_string("{2}/{1}/{0}")+" "+time.strftime("%H:%m"))
+			self.view.insert(edit, sel.begin(), Gregorian(time.strftime("%Y,%m,%d")).persian_string("{2}/{1}/{0}")+" "+time.strftime("%H:%M"))
